@@ -1,0 +1,54 @@
+import { Meta, Story, Typeset, Canvas } from '@storybook/addon-docs';
+import '~base/base.module.scss';
+import { typography, sampleText } from './TypographyHelpers.ts';
+
+<Meta title="0. Base/2. Typography" component={<></>}/>
+
+# Typography
+Default font
+**Front:** Roboto  
+**Weights:** 300 (regular), 500, 700
+**Style**: Sans
+
+## Regular
+The regular font size for interfaces is 16px with a regular (300) font thickness
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={sampleText}
+  fontFamily={typography.type.primary}
+/>
+
+
+## bold
+Bold text is used to mark important bits and headers.
+Header sizes differ per header.
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={sampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Components
+There are different off-the-shelf (Atom) components available to make using text
+and text styles easier in the application.
